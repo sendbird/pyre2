@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pyre2
+  description: Python wrapper for RE2
+  annotations:
+    github.com/project-slug: sendbird/pyre2
+spec:
+  type: library 
+  lifecycle: production
+  owner: server-platform-team
+  system: sendbird-chat
