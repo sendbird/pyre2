@@ -78,7 +78,7 @@ def main():
     runtime_library_dirs = [os.path.join(re2_prefix, 'lib')
             ] if re2_prefix else []
     extra_compile_args = ['-O0', '-g'] if DEBUG else [
-            '-O3', '-march=native', '-DNDEBUG']
+            '-O3', '-DNDEBUG']
     # Older GCC version such as on CentOS 6 do not support C++11
     if not platform.python_compiler().startswith('GCC 4.4.7'):
         extra_compile_args.append('-std=c++11')
